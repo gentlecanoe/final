@@ -1,0 +1,36 @@
+<style>
+    .container{
+      width:100%;
+      margin:auto;
+      display:flex; /* 将内容放置在一个水平线上 */
+      align-items: center; /* 垂直居中 */
+      justify-content: space-between; /* 水平间距平均分布 */
+    }
+    @media (min-width:600px) {.container{width: 80%;}}
+    @media (min-width:768px) {.container{width: 60%;}}
+    @media (min-width:1024px) {.container{width: 50%;}}
+</style>
+
+<div class="container">
+<h1>Hi, {{r}}! How can I help you today?</h1>
+
+<form action="/image_gpt" method="post">
+    <input type = "submit" value="Image Generator" style="width:200px;height:50px;">
+</form>
+
+<form action="/text_gpt" method="post">
+    <input type = "submit" value="Text Generator" style="width:200px;height:50px;">
+</form>
+
+<form action="/NTU" method="post">
+    <input type = "submit" value="Message about NTU" style="width:200px;height:50px;">
+</form>
+
+    
+<form action="/end" method="post">
+<input type = "submit" value="END" style="width:200px;height:50px;">
+</form>
+
+<img src="https://seopic.699pic.com/photo/50053/1712.jpg_wh1200.jpg" alt="Image" style="width: 300px; height: 300px;"> 
+
+</div>
