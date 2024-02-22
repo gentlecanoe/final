@@ -1,9 +1,13 @@
 <style>
-    .container{width:100%;margin:auto}
+ .container{width:100%;
+  margin:auto;
+  text-align: center; /* 将容器中的内容居中对齐 */
+}
     @media (min-width:600px) {.container{width: 80%;}}
     @media (min-width:768px) {.container{width: 60%;}}
     @media (min-width:1024px) {.container{width: 50%;}}
 </style>
+<title>Button Redirect</title>
 
 <div class="container">
 <h1>NTU is a great university</h1>
@@ -11,6 +15,9 @@
 <p><img src="https://seopic.699pic.com/photo/50162/1445.jpg_wh1200.jpg"
     width="300" height="200"></p>
 
+<a href="https://www.ntu.edu.sg/main/cn" style="text-decoration: none;">
+    <button style="width: 200px; height: 100px;">Go to NTU Website</button>
+</a>
 
 <form action="/main" method="post">
     <input type = "submit" value="Main" style="width:200px;height:100px;">
